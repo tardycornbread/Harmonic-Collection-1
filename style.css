@@ -1,0 +1,62 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;     
+}
+
+h1{
+font-family: field-gothic-compact, sans-serif;
+font-style: oblique;
+font-weight: 700;
+font-weight: 200;
+font-size: 100px;
+margin-left:10vw;
+
+}
+
+h2{
+    margin-left: 5vw;
+    margin-top: 5vw;
+    border: 2px solid rebeccapurple;
+    padding: .5em;
+}
+
+
+  
+
+#one{
+    width: 10%;
+    padding: 20px;
+    margin-left:300px;
+    
+   font-size: 30px;
+   border: 2px solid black;
+
+
+}
+
+#two{
+    width: 20%;
+    padding:20px;
+    border: 2px solid black;
+
+   font-size: 30px;
+}
+
+#three{
+    width:20%;
+    padding:20px;
+    border: 2px solid black;
+
+    font-size: 30px;
+}
+
+#four{
+    width:60%;
+    padding:20px;
+    border:2px solid black;
+    margin-left: 500px;
+    
+    font-size:30px;
+}
