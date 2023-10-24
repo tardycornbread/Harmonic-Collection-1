@@ -1,0 +1,44 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;     
+}
+
+h2{
+    width: 20vw;
+    border:2px solid rgb(12, 12, 227); 
+    padding: 1%;
+    margin-left: 20%;
+    margin-top: 5%;
+}
+
+.container {
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    border: solid 2px rgb(25, 0, 255);
+    display: flex;
+
+}
+
+.Dream-1{
+    height: 600px;
+    width: 600px;
+    margin: auto;
+    border: 2px solid #e0e0e0;
+    
+   
+    
+    
+}
+
+.Dream-2{
+    height: 600px;
+    width: 600px;
+    margin: auto;
+    border: 2px solid #f9f9f9;
+
+ 
+
+
+
+}
