@@ -46,7 +46,6 @@ animation-iteration-count: infinite;
     border: 1px solid white;
     height: 300px;
     width: 300px;
-    padding: 5%;
     transition: transform 0.5s ease-in-out;
     transform: rotate(0deg);
     
@@ -58,15 +57,15 @@ animation-iteration-count: infinite;
 
 .Dream-1 .overlay-text{
     position: absolute;
-    top: 0; /* Align to the top of the container */
-    left: 0; /* Align to the left of the container */
-    right: 0; /* Stretch right to cover the full image width */
-    bottom: 0; /* Stretch bottom to cover the full image height */
-    background: rgba(0, 0, 0, 0.5); /* semi-transparent background */
+    top: 0; 
+    left: 0;
+    right: 0; 
+    bottom: 0; 
+    background: rgba(0, 0, 0, 0.5); 
     color: white;
     display: flex;
-    align-items: center; /* Center text vertically */
-    justify-content: center; /* Center text horizontally */
+    align-items: center; 
+    justify-content: center;
     transition: opacity 0.5s ease-in-out;
     opacity: 1;
 
