@@ -5,8 +5,11 @@
 }
 
 h2{
+    font-family: "guyot-sans", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 10vw;
     width: 20vw;
-    border:2px solid rgb(12, 12, 227); 
     padding: 1%;
     margin-left: 20%;
     margin-top: 5%;
@@ -17,13 +20,15 @@ h2{
     padding: 10px;
     border: solid 2px rgb(25, 0, 255);
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
 
 }
 
 .Dream-1{
     height: 600px;
     width: 600px;
-    margin: auto;
+    margin-left: 10%;
     border: 2px solid #e0e0e0;
     
    
@@ -42,3 +47,16 @@ h2{
 
 
 }
+
+.Dream-3{
+    height: 600px;
+    width: 600px;
+    margin: auto;
+    border: 2px solid #f9f9f9;
+
+ 
+
+
+
+}
+
