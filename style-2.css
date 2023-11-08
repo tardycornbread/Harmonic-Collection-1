@@ -22,6 +22,7 @@ h2{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    justify-content: center;
 
 }
 
@@ -57,6 +58,14 @@ h2{
  
 
 
+
+}
+
+.Prompt{
+    margin-right: 10px;
+    height:200px;
+    width: 200px;
+    border: 1px solid rgb(0, 0, 0);
 
 }
 
