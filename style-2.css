@@ -1,71 +1,65 @@
-*{
+* {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;     
 }
 
-h2{
+h1 {
     font-family: "guyot-sans", sans-serif;
     font-weight: 900;
-    font-style: normal;
+    color: white; /* White color */
     font-size: 10vw;
     width: 20vw;
-    padding: 1%;
-    margin-left: 20%;
-    margin-top: 5%;
+    position: absolute; /* Absolute positioning */
+    top: 0; /* Align to the top */
+    left: 0; /* Align to the left */
 }
 
-.container {
-    background-color: rgb(255, 255, 255);
-    padding: 10px;
-    border: solid 2px rgb(25, 0, 255);
+p {
+    width: 10vw;
+    height: 5vh;
+}
+
+.dream-1-A {
+    width: 300px;
+    height: auto;
+    position: absolute;
+    transition: transform 1s;
+}
+
+.dream-1-B {
+    width: 300px;
+    height: auto;
+    position: absolute;
+    transition: transform 1s;
+}
+
+/* Matrix effect for .matrix-effect class */
+.matrix-effect {
+    color: #0F0; /* Matrix green color */
+    font-family: 'Courier New', Courier, monospace; /* Monospace font for Matrix effect */
+    position: absolute;
+    top: 0;
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Center horizontally */
+    animation: moveText 5s linear infinite;
+}
+
+@keyframes moveText {
+    0% {
+        top: -100%;
+    }
+    100% {
+        top: 100%;
+    }
+}
+
+/* Styling for the body (optional) */
+body {
+    background-color: black; /* Matrix background */
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
     justify-content: center;
-
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
 }
-
-.Dream-1{
-    height: 600px;
-    width: 600px;
-    margin-left: 10%;
-    border: 2px solid #e0e0e0;
-    
-   
-    
-    
-}
-
-.Dream-2{
-    height: 600px;
-    width: 600px;
-    margin: auto;
-    border: 2px solid #f9f9f9;
-
- 
-
-
-
-}
-
-.Dream-3{
-    height: 600px;
-    width: 600px;
-    margin: auto;
-    border: 2px solid #f9f9f9;
-
- 
-
-
-
-}
-
-.Prompt{
-    margin-right: 10px;
-    height:200px;
-    width: 200px;
-    border: 1px solid rgb(0, 0, 0);
-
-}
-

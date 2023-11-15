@@ -40,6 +40,8 @@ animation-iteration-count: infinite;
    
 }
 
+
+
 .Dream-1{
     position: relative;
     width: fit-content;
@@ -76,22 +78,74 @@ animation-iteration-count: infinite;
   
 
 
-.Dream-2{
+  .Dream-2{
+    position: relative;
+    width: fit-content;
+    border: 1px solid white;
     height: 300px;
     width: 300px;
-    padding: 5%;
+    transition: transform 0.5s ease-in-out;
+    transform: rotate(0deg);
+}
 
- 
+.Dream-2:hover {
+    transform: rotate(15deg); /* Rotate element on hover */
+}
+
+.Dream-2 .overlay-text{
+    position: absolute;
+    top: 0; 
+    left: 0;
+    right: 0; 
+    bottom: 0; 
+    background: rgba(0, 0, 0, 0.5); 
+    color: white;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    transition: opacity 0.5s ease-in-out;
+    opacity: 1;
+}
+
+.Dream-2:hover .overlay-text {
+    opacity: 0; /* Change opacity on hover */
+}
 
 
+
+
+.Dream-3{
+    position: relative;
+    width: fit-content;
+    border: 1px solid white;
+    height: 300px;
+    width: 300px;
+    transition: transform 0.5s ease-in-out;
+    transform: rotate(0deg);
 
 }
 
-.Dream-3{
-    height: 300px;
-    width: 300px;
-    padding: 5%;
+.Dream-3:hover {
+    transform: rotate(15deg); /* Rotate element on hover */
+}
 
+.Dream-3 .overlay-text{
+    position: absolute;
+    top: 0; 
+    left: 0;
+    right: 0; 
+    bottom: 0; 
+    background: rgba(0, 0, 0, 0.5); 
+    color: white;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    transition: opacity 0.5s ease-in-out;
+    opacity: 1;
+}
+
+.Dream-3:hover .overlay-text {
+    opacity: 0; /* Change opacity on hover */
 }
 
 .Dream-4{
