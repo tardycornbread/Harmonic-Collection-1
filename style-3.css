@@ -1,0 +1,65 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;     
+}
+
+h1 {
+    font-family: "guyot-sans", sans-serif;
+    font-weight: 900;
+    color: white; /* White color */
+    font-size: 10vw;
+    width: 20vw;
+    position: absolute; /* Absolute positioning */
+    top: 0; /* Align to the top */
+    left: 0; /* Align to the left */
+}
+
+p {
+    width: 10vw;
+    height: 5vh;
+}
+
+.dream-3-A {
+    width: 300px;
+    height: auto;
+    position: absolute;
+    transition: transform 1s;
+}
+
+.dream-3-B {
+    width: 300px;
+    height: auto;
+    position: absolute;
+    transition: transform 1s;
+}
+
+/* Matrix effect for .matrix-effect class */
+.matrix-effect {
+    color: #0F0; /* Matrix green color */
+    font-family: 'Courier New', Courier, monospace; /* Monospace font for Matrix effect */
+    position: absolute;
+    top: 0;
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Center horizontally */
+    animation: moveText 5s linear infinite;
+}
+
+@keyframes moveText {
+    0% {
+        top: -100%;
+    }
+    100% {
+        top: 100%;
+    }
+}
+
+/* Styling for the body (optional) */
+body {
+    background-color: black; /* Matrix background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
