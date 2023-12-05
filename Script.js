@@ -1,28 +1,4 @@
 $(document).ready(function() {
-    var images = ["img/1-A.png", "img/1-B.png", "img/1-C.png"]; 
-    var currentImageIdx = 0;
-
-    function updateGalleryImage(index) {
-        $('.gallery-image').attr('src', images[index]);
-        // Update the description based on the image
-        $('.image-description').text("Description for image " + (index + 1));
-    }
-
-    $('.next-button').click(function() {
-        currentImageIdx = (currentImageIdx + 1) % images.length;
-        updateGalleryImage(currentImageIdx);
-    });
-
-    $('.prev-button').click(function() {
-        currentImageIdx = (currentImageIdx - 1 + images.length) % images.length;
-        updateGalleryImage(currentImageIdx);
-    });
-
-    updateGalleryImage(0);
-});
-
-
-$(document).ready(function() {
     $('.text-container').on('click', function() {
       $(this).addClass('text-container-animate');
     });
@@ -34,3 +10,15 @@ $(document).ready(function() {
     var amountMovedY = (e.pageY * -1 / 20);
     $(this).children('img').css('transform', 'rotateY(' + amountMovedX + 'deg) rotateX(' + amountMovedY + 'deg)');
   });
+
+  document.addEventListener('DOMContentLoaded', function() {
+    var inceptionContainer = document.getElementById('inceptionContainer');
+    var images = inceptionContainer.getElementsByClassName('Dream');
+    var foldAngle = 20; // Adjust this value as needed
+
+    inceptionContainer.addEventListener('click', function() {
+        for (let i = 0; i < images.length; i++) {
+            images[i].style.transform = `rotateX(${i * foldAngle}deg)`;
+        }
+    });
+});

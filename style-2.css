@@ -75,26 +75,11 @@ font-style: normal;
     animation: moveToVanishPoint 2s forwards;
 }
 
+#inceptionContainer {
+    perspective: 900px;
+    transform-style: preserve-3d;
+}
 
 
 
 
-@keyframes moveToVanishPoint {
-    0% {
-      transform: translateZ(0); /* Start at normal position */
-      opacity: 1;
-    }
-    100% {
-      transform: translateZ(-1000px); /* Move text away */
-      opacity: 0; /* Fade out */
-    }
-  }
-
-  @keyframes raceCarEffect {
-    0% {
-      transform: translateX(0); /* Start from its original position */
-    }
-    100% {
-      transform: translateX(100vw); /* Move to the right end of the screen */
-    }
-  }

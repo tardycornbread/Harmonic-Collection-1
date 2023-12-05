@@ -53,8 +53,11 @@ h1{
     width: 300px;
     height: 300px;
     transition: transform 0.5s ease-in-out;
-    cursor: pointer; /* Indicates that the element is interactive */
+    cursor: pointer; 
+    perspective: 1000px; 
+    transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
 }
+
 
 
 .Dream img {
@@ -65,7 +68,8 @@ h1{
 }
 
 .Dream:hover {
-    transform: scale(1.1);
+    transform: scale(1.05) rotateY(20deg) rotateX(10deg); /* 3D transformation */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3); /* Enhanced shadow for depth */
 }
 
 .Dream:hover img {
@@ -74,38 +78,56 @@ h1{
 
 
 .overlay-text {
-    font-family: "degular-display", sans-serif;
-    font-weight: 500;
-    font-style: italic;
+    color: #ffffff;
+    font-family: degular, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 50px;
     position: absolute;
     top: 0;
     left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
-    color: white;
-    display: flex;
+    width: 100%; /* Match the width of the parent */
+    height: 100%; /* Match the height of the parent */
+    display: flex; /* Use flexbox for centering */
     align-items: center; /* Center vertically */
     justify-content: center; /* Center horizontally */
     opacity: 0;
-    visibility: hidden; /* Start as invisible */
-    transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
-    transform: translateY(10%); /* Adjust as needed */
-    color: #0f0; /* Green color, typical of Matrix code */
-    font-family: 'Courier New', monospace; /* Monospace font for a code-like appearance */
-    letter-spacing: 2px; /* Adjust letter spacing */
-    font-size: 16px; /* Adjust font size as needed */
-    background: transparent; /* Remove background for a clearer effect */
-    text-shadow: 0 0 5px rgba(0, 255, 0, 0.7); /* Optional: Add a glow effect */
-    display: none; /* Hide by default, show on hover */
+    transition: opacity 0.5s ease-in-out;
+    z-index: 10; /* Make sure it's above the image */
+
 }
 
 .Dream:hover .overlay-text {
-    opacity: 0.5;
-    visibility: visible;
-    transform: translateY(0); /* Reset to original position */
+    opacity: 1; /* Make it fully visible */
+
 }
 
+.mood-filters {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.filter {
+    padding: 10px 20px; /* Increased padding for a better visual */
+    margin: 0 5px;
+    cursor: pointer;
+    border-radius: 25px; /* Rounded corners */
+    background-color: #000000; /* A modern blue, but choose any color you like */
+    border: none; /* Remove default border */
+    color: white; /* Text color that contrasts with the button color */
+    text-transform: uppercase; /* Optional: makes text uppercase for a modern look */
+    font-weight: bold; /* Makes the text bold */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition for hover effects */
+
+    /* Add a subtle shadow for depth (optional) */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.filter:hover {
+    background-color: #0056b3; /* Slightly darker shade for hover effect */
+    transform: translateY(-2px); /* Slightly raise the button on hover */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3); /* Increased shadow on hover for a 'lifting' effect */
+}
 
 
 
