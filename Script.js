@@ -21,3 +21,16 @@ $(document).ready(function() {
     updateGalleryImage(0);
 });
 
+
+$(document).ready(function() {
+    $('.text-container').on('click', function() {
+      $(this).addClass('text-container-animate');
+    });
+  });
+
+
+  $('.image-container').mousemove(function(e) {
+    var amountMovedX = (e.pageX * -1 / 20);
+    var amountMovedY = (e.pageY * -1 / 20);
+    $(this).children('img').css('transform', 'rotateY(' + amountMovedX + 'deg) rotateX(' + amountMovedY + 'deg)');
+  });

@@ -41,6 +41,7 @@ font-style: normal;
     max-width: 1500px;
     margin-left: auto;
     margin-right: auto;
+    perspective: 1000px;
 
 }
 
@@ -67,5 +68,33 @@ font-style: normal;
     overflow-wrap: break-word; 
 
 
+
 }
     
+.text-container-animate {
+    animation: moveToVanishPoint 2s forwards;
+}
+
+
+
+
+
+@keyframes moveToVanishPoint {
+    0% {
+      transform: translateZ(0); /* Start at normal position */
+      opacity: 1;
+    }
+    100% {
+      transform: translateZ(-1000px); /* Move text away */
+      opacity: 0; /* Fade out */
+    }
+  }
+
+  @keyframes raceCarEffect {
+    0% {
+      transform: translateX(0); /* Start from its original position */
+    }
+    100% {
+      transform: translateX(100vw); /* Move to the right end of the screen */
+    }
+  }
