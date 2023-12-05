@@ -1,65 +1,81 @@
 * {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;     
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-h1 {
-    font-family: "guyot-sans", sans-serif;
-    font-weight: 900;
-    color: white; /* White color */
-    font-size: 10vw;
-    width: 20vw;
-    position: absolute; /* Absolute positioning */
-    top: 0; /* Align to the top */
-    left: 0; /* Align to the left */
+
+
+
+H1{
+    font-family: "degular-display", sans-serif;
+font-weight: 700;
+font-style: normal;
+    margin-left: 5vw;
+    color: black;
+
+    font-size: 200px;
+
+
+
+
 }
 
-p {
-    width: 10vw;
-    height: 5vh;
+
+
+
+.Dream {
+    position: relative;
+    border: 1px solid white;
+    height: 500px; /* Increased from 300px */
+    width: 500px; /* Increased from 300px */
+    margin: 10px;
 }
 
-.dream-3-A {
-    width: 300px;
-    height: auto;
-    position: absolute;
-    transition: transform 1s;
-}
 
-.dream-3-B {
-    width: 300px;
-    height: auto;
-    position: absolute;
-    transition: transform 1s;
-}
-
-/* Matrix effect for .matrix-effect class */
-.matrix-effect {
-    color: #0F0; /* Matrix green color */
-    font-family: 'Courier New', Courier, monospace; /* Monospace font for Matrix effect */
-    position: absolute;
-    top: 0;
-    left: 50%; /* Center horizontally */
-    transform: translateX(-50%); /* Center horizontally */
-    animation: moveText 5s linear infinite;
-}
-
-@keyframes moveText {
-    0% {
-        top: -100%;
-    }
-    100% {
-        top: 100%;
-    }
-}
-
-/* Styling for the body (optional) */
-body {
-    background-color: black; /* Matrix background */
+.main-container {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    overflow: hidden;
+    flex-direction: row;
+    justify-content: space-between; /* Adjusts space between containers */
+    width: 100%;
+    max-width: 1500px;
+    margin-left: auto;
+    margin-right: auto;
+    perspective: 1000px;
+
+}
+
+.image-container {
+    position: relative;
+    border: 1px solid white;
+    height: 500px; /* Increased from 300px */
+    width: 50%; /* Increased from 300px */
+    margin: 10px;
+}
+
+.text-container {
+    font-family: degular, sans-serif;
+    font-weight: 500;
+    font-style: italic;
+    font-size: 25px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-right: 15vw;
+    width: 50%; /* Adjust as needed */
+    padding: 20px;
+    max-width: 100%; /* Prevents overflow */
+    overflow-wrap: break-word; 
+
+
+
+}
+    
+.text-container-animate {
+    animation: moveToVanishPoint 2s forwards;
+}
+
+#inceptionContainer {
+    perspective: 900px;
+    transform-style: preserve-3d;
 }

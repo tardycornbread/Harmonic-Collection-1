@@ -71,15 +71,27 @@ font-style: normal;
 
 }
     
-.text-container-animate {
-    animation: moveToVanishPoint 2s forwards;
-}
+
 
 #inceptionContainer {
     perspective: 900px;
     transform-style: preserve-3d;
 }
 
+@keyframes raceText {
+  from {
+      transform: translateX(-100%); /* Start off-screen to the left */
+      opacity: 0;
+  }
+  to {
+      transform: translateX(100%); /* End off-screen to the right */
+      opacity: 1;
+  }
+}
+
+.racing-text {
+  animation: raceText 2s linear; /* Apply the animation */
+}
 
 
 
