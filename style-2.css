@@ -27,8 +27,8 @@ font-style: normal;
 .Dream {
     position: relative;
     border: 1px solid white;
-    height: 500px; /* Increased from 300px */
-    width: 500px; /* Increased from 300px */
+    height: 500px;
+    width: 500px; 
     margin: 10px;
 }
 
@@ -36,7 +36,7 @@ font-style: normal;
 .main-container {
     display: flex;
     flex-direction: row;
-    justify-content: space-between; /* Adjusts space between containers */
+    justify-content: space-between; 
     width: 100%;
     max-width: 1500px;
     margin-left: auto;
