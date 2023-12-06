@@ -14,22 +14,24 @@ body {
   }
 
 h1{
-    color: rgb(0, 0, 0); /* Primary color */
+    color: rgb(0, 0, 0); 
     font-family: "evolver-variable", sans-serif;
     font-variation-settings: "slnt" 0, "wght" 500;
-    font-size: 90px;
+    font-size: 150px;
     margin-left: 10vw;
     margin-top: 2%;
     line-height: 1.5;
-    text-shadow: -1px 0 rgb(255, 0, 0), /* Red shadow to the left */
-                 1px 0 rgb(0, 0, 255); /* Blue shadow to the right */
+    text-shadow: -1px 0 rgb(255, 0, 0), 
+                 1px 0 rgb(0, 0, 255); 
     animation-name: Test1;
     animation-duration: 10s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
-    transform-style: preserve-3d; /* Enable 3D transformations */
+    transform-style: preserve-3d; 
+    padding-top: 10%;
+    padding-bottom: 15%;
 
-    /* Text Shadow for Depth */
+   
    
 }
 .container {
@@ -41,8 +43,8 @@ h1{
     margin-left: 15vw;
     
 
-    width: 100%; /* Add a defined width */
-    max-width: 1500px; /* Or any max-width that suits your design */
+    width: 100%;
+    max-width: 1500px; 
 }
 
 
@@ -108,7 +110,7 @@ h1{
 }
 
 .filter {
-    padding: 10px 20px; /* Increased padding for a better visual */
+    padding: 10px 20px; 
     margin: 0 5px;
     cursor: pointer;
     border-radius: 25px; /* Rounded corners */
