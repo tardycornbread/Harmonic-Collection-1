@@ -4,52 +4,39 @@
     box-sizing: border-box;
 }
 
-
-
-
-H1{
+h1 {
     font-family: "degular-display", sans-serif;
-font-weight: 700;
-font-style: normal;
+    font-weight: 700;
+    font-style: normal;
     margin-left: 5vw;
     color: black;
-
     font-size: 200px;
-
-
-
-
 }
-
-
-
 
 .Dream {
     position: relative;
     border: 1px solid white;
     height: 500px;
-    width: 500px; 
+    width: 500px;
     margin: 10px;
 }
-
 
 .main-container {
     display: flex;
     flex-direction: row;
-    justify-content: space-between; 
+    justify-content: space-between;
     width: 100%;
     max-width: 1500px;
     margin-left: auto;
     margin-right: auto;
     perspective: 1000px;
-
 }
 
 .image-container {
     position: relative;
     border: 1px solid white;
-    height: 500px; /* Increased from 300px */
-    width: 50%; /* Increased from 300px */
+    height: 500px;
+    width: 50%;
     margin: 10px;
 }
 
@@ -59,39 +46,37 @@ font-style: normal;
     font-style: italic;
     font-size: 20px;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-start;
     margin-right: 15vw;
     width: 50%; /* Adjust as needed */
     padding: 20px;
     max-width: 100%; /* Prevents overflow */
-    overflow-wrap: break-word; 
-
-
-
+    overflow-wrap: break-word;
 }
+
+.emotion-tag-container {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#emotionTag {
+    display: block;
+    padding: 5px 10px;
+    background: #f2f2f2;
+    border-radius: 5px;
+}
+
+.text-content {
+    width: 100%; /* Ensures text content fills the width of its container */
+    word-wrap: break-word; 
+}
+
     
 
 
-#inceptionContainer {
-    perspective: 900px;
-    transform-style: preserve-3d;
-}
 
-@keyframes raceText {
-  from {
-      transform: translateX(-100%); /* Start off-screen to the left */
-      opacity: 0;
-  }
-  to {
-      transform: translateX(100%); /* End off-screen to the right */
-      opacity: 1;
-  }
-}
 
-.racing-text {
-  animation: raceText 2s linear; /* Apply the animation */
-}
 
 
 
